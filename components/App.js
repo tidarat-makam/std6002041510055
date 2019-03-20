@@ -7,7 +7,7 @@ class App extends React.Component {
     render() {
         return (
                 <View>
-                    <Text>Hello Word!!!</Text>
+                    <Text>Tidarat Jibmagcha</Text>
                 </View>
         );
     }
