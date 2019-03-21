@@ -7,7 +7,7 @@ class App extends React.Component {
     render() {
         return (
                 <View>
-                    <Text>Tidarat Jibmagcha</Text>
+                    <Text style={{fontSize: 25, color: '#E11584', textAlign: "center"}}>Tidarat Jibmagcha</Text>
                 </View>
         );
     }
