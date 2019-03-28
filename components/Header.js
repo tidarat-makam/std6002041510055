@@ -15,10 +15,12 @@ const styles = {
     header: {
         padding: 10,
         backgroundColor: "#17202A",
-        marginBottom: 5
+        marginBottom: 20,
+        paddingHorizontal: 20,
+        elevation: 10,
     },
     text: {
-        color: "#F8F9F9",
+        color: "#ec9bac",
         fontSize: 30,
         textAlign: "center"
     }

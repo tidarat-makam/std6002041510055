@@ -1,25 +1,29 @@
 import React from 'react';
 import {View, Text, Image, Dimensions, Button} from 'react-native';
 import CardSection from './CardSection';
-import { isFlowDeclaration } from '@babel/types';
 
 class Card extends React.Component {
     render() {
         return (
             <View>  
                 <CardSection>
-                    <Image 
-                        style={{width: 100, height: 100}}
-                        source={{uri: 'https://images.unsplash.com/photo-1516399779-1480b4f76df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80'}}
-                    />
-                    <Text>พรุ่งนี้ค่อย</Text>
-                    <Text>POP</Text>
+                    <View style={{flexDirection: 'row', alignItems: 'center', width: 450}}>
+                        <Image 
+                        style={{width: 70, height: 70}}
+                        source={{uri: 'https://l.lnwfile.com/ic4yg5.jpg'}}
+                        />
+                        <View style={{marginLeft: 8}}>
+                            <Text style={{fontSize: 20}}>SQUARE UP</Text>
+                            <Text>BLACHPINK</Text> 
+                        </View> 
+                    </View>
+                     
                 </CardSection>
                 
-                <CardSection>
+                <CardSection>                                     
                 <Image 
-                        style={{width: Dimensions.get('window').width, height: 200}}
-                        source={{uri: 'https://images.unsplash.com/photo-1516399779-1480b4f76df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80'}}
+                        style={{width: Dimensions.get('window').width-30, height: 350}}
+                        source={{uri: 'https://cf.shopee.co.th/file/312726e34773c1d8a63afc46645c01be'}}
                     />
                 </CardSection>
                 <CardSection>
@@ -27,6 +31,7 @@ class Card extends React.Component {
                             <View style={{ width: 100}}>
                                 <Button
                                     title="Buy"
+                                    color="#ec9bac"
                                 />
                             </View>
                         </View>
