@@ -15,7 +15,7 @@ const styles = {
     header: {
         padding: 10,
         backgroundColor: "#17202A",
-        
+        marginBottom: 5
     },
     text: {
         color: "#F8F9F9",

@@ -1,6 +1,6 @@
 // import Library
 import React from 'react';
-import { View, Text  } from 'react-native';
+import { View, Text , Image } from 'react-native';
 
 import Header from './Header';
 import Card from './Card'
@@ -11,6 +11,7 @@ class App extends React.Component {
                 <View>
                     <Header title="Albums" />
                     <Card />
+                
                 </View>
         );
     }
