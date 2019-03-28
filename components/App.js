@@ -9,7 +9,7 @@ class App extends React.Component {
         return (
                 <View>
                     <Header title="Albums" />
-                    <Text style={{fontSize: 25, color: '#E11584', textAlign: "center"}}>Tidarat Jibmagcha</Text>
+                    <Text style={{fontSize: 15, color: '#212F3D', textAlign: "center"}}>Tidarat Jibmagcha</Text>
                 </View>
         );
     }
