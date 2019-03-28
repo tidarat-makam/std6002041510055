@@ -7,7 +7,7 @@ class Card extends React.Component {
         return (
             <View>  
                 <CardSection>
-                    <View style={{flexDirection: 'row', alignItems: 'center', width: 450}}>
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
                         <Image 
                         style={{width: 70, height: 70}}
                         source={{uri: 'https://l.lnwfile.com/ic4yg5.jpg'}}
