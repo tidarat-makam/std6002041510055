@@ -9,7 +9,7 @@ class Login extends React.Component {
         headerStyle: {
             backgroundColor: "#17202A",
         },
-        headerTintColor: "#ec9bac",
+            headerTintColor: "#ec9bac",
     };
     constructor(props) {
         super(props)
@@ -28,20 +28,16 @@ class Login extends React.Component {
             email: this.state.email,
             password: this.state.password
         }).then(async function (response) {
-            // alert("Logined !");
             console.log(response.data.data.token);
             try {
                 await AsyncStorage.setItem("login_token", response.data.data.token);
             } catch (error) {
-                alert("Error fail !");
                 return;
             }
-
             this.props.navigation.navigate("Profile");
-
         }.bind(this))
         .catch(function (error) {
-            alert("Login fail !");
+            alert("Enter Email & Password");
             console.log(error);
         }); 
     }
@@ -52,7 +48,7 @@ class Login extends React.Component {
                 this.props.navigation.navigate("Profile");
             }
         } catch (error) {
-            console.error(error);
+            console.error('error' +error);
         }
 
     }

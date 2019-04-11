@@ -8,8 +8,8 @@ class Profile extends React.Component {
     constructor(){
         super();
         this.state = {
-            name: "Loading...",
-            email: "Loading...",
+            name: "",
+            email: "",
         };   
     }
     
@@ -18,7 +18,7 @@ class Profile extends React.Component {
         headerStyle: {
             backgroundColor: "#17202A",
         },
-        headerTintColor: "#ec9bac",
+            headerTintColor: "#ec9bac",
     };
 
     async logOut() {
