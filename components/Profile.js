@@ -29,7 +29,6 @@ class Profile extends React.Component {
         }
 
         this.props.navigation.navigate("Login");
-
     }
 
     async componentDidMount() {       
@@ -53,16 +52,21 @@ class Profile extends React.Component {
 
     render() {
         return(
-                <View>
-                    <Text>Profile</Text>
-
-                    <Text>Name: {this.state.name}</Text>
-                    <Text>Email: {this.state.email}</Text>
-
-                    <Button
-                        title="LogOut"
-                        onPress= { this.logOut.bind(this) }></Button>
-
+                <View style={{paddingTop: 20,paddingLeft:10, paddingRight: 10}}>
+                    <Text style={{fontSize:24}}>Profile</Text>
+                    <View style={{paddingTop: 20, paddingBottom:20}}>
+                        <Text style={{fontSize:18}}>Name: {this.state.name}</Text>
+                        <Text style={{fontSize:18}}>Email: {this.state.email}</Text>
+                    </View>
+                    <View style={{ justifyContent: 'center', alignItems: 'center', marginTop: 10}}>
+                        <View style={{width: 150, height: 20, fontSize: 24}}>
+                            <Button
+                                title="LogOut"
+                                color="#ec9bac" 
+                                onPress= { this.logOut.bind(this) }>
+                            </Button>
+                        </View>
+                    </View>
                 </View>
         )
     }       
